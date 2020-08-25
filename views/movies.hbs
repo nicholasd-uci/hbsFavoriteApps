@@ -1,7 +1,17 @@
-<h1>Favorite Movies</h1>
+{{!-- Handle Bar Helpers Method  "each Iterator" --}}
+{{#each movies}}
+    <h1>{{ this.title }}</h1>
+    <img src="{{ this.poster }}" alt="{{ this.title }}">
+    <p> {{ this.plot }}</p>
+{{/each}}
+
+
+
+{{!-- <h1>Favorite Movies</h1>
 
 <h2></h2>
 
 <img src="{{ poster }}" alt="{{ title }}">
 
-<p>{{ plot }}</p>
+<p>{{ plot }}</p> --}}
+
