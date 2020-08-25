@@ -36,20 +36,23 @@ app.get('/movies', (req, res) => {
 })
 
 const song = [{
-    cover: `https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.happybirthdaymsg.com%2Fhappy-birthday-images%2F&psig=AOvVaw0mPs_ZfBBJP86zWWvdQOC9&ust=1598467410666000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDg26OBt-sCFQAAAAAdAAAAABAD`,
+    cover: 'https://i.pinimg.com/736x/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg',
     artist:'Everyone',
     title: 'Happy Birthday',
     lyrics:'Happy Happy Birthday... your older now!',
 },
 {
-    cover: `https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F81VlH2JrPPL.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.com%2FTwinkle-Little-Trapanis-Extended-Nursery%2Fdp%2F1879085704&tbnid=T6zJtLTfuOqLLM&vet=12ahUKEwi2j9nQgbfrAhX8ADQIHdyzAIQQMygEegUIARD7AQ..i&docid=SOTjHd1DsWDG2M&w=1043&h=1200&q=twickle%20twickle%20little%20star&ved=2ahUKEwi2j9nQgbfrAhX8ADQIHdyzAIQQMygEegUIARD7AQ`,
-    artist:'Twinkle',
-    title: 'Twinkle Twinkle',
-    lyrics:'Little Star'
-    }
+    cover: `https://img.youtube.com/vi/Cwkej79U3ek/hqdefault.jpg`,
+    artist:'Vanessa Carlton',
+    title: 'A Thousand Miles',
+    lyrics: `Makin my way downtown
+    Walkin' fast, faces pass and I'm homebound
+    Starin blankly ahead, just making my way
+    Makin a way through the crowd`
+    },
 ]
 app.get('/songs', (req, res) => {
-    res.render('songs', song)
+    res.render('songs', {song})
 })
 
 
